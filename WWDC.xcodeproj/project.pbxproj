@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		040C642E28737E7500A34AEF /* HeartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C642D28737E7500A34AEF /* HeartRateViewController.swift */; };
-		047472492877AE09002222B3 /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047472482877AE09002222B3 /* HeartRateView.swift */; };
+		047472492877AE09002222B3 /* HeartRateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047472482877AE09002222B3 /* HeartRateDetailView.swift */; };
 		04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9EC2877C33D00284E34 /* HeartData.swift */; };
 		04B9E9F12877C93100284E34 /* HeartRateTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */; };
 		04B9E9F32877C95600284E34 /* HeartRateBPMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9F22877C95600284E34 /* HeartRateBPMView.swift */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		040C642D28737E7500A34AEF /* HeartRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewController.swift; sourceTree = "<group>"; };
-		047472482877AE09002222B3 /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
+		047472482877AE09002222B3 /* HeartRateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateDetailView.swift; sourceTree = "<group>"; };
 		04B9E9EC2877C33D00284E34 /* HeartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartData.swift; sourceTree = "<group>"; };
 		04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTitleView.swift; sourceTree = "<group>"; };
 		04B9E9F22877C95600284E34 /* HeartRateBPMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateBPMView.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		04B9E9FC2877D89400284E34 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				047472482877AE09002222B3 /* HeartRateView.swift */,
+				047472482877AE09002222B3 /* HeartRateDetailView.swift */,
 				04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */,
 				04B9E9F22877C95600284E34 /* HeartRateBPMView.swift */,
 				04B9E9F62877CC7100284E34 /* HeartRateChartView.swift */,
@@ -215,7 +215,7 @@
 				04B9E9FB2877D5E800284E34 /* HeartChartData.swift in Sources */,
 				04B9E9F92877D48100284E34 /* HeartDataSamples.swift in Sources */,
 				04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */,
-				047472492877AE09002222B3 /* HeartRateView.swift in Sources */,
+				047472492877AE09002222B3 /* HeartRateDetailView.swift in Sources */,
 				04B9E9F32877C95600284E34 /* HeartRateBPMView.swift in Sources */,
 				04F41CD828720CDD004B291A /* ViewController.swift in Sources */,
 				04F41CD428720CDD004B291A /* AppDelegate.swift in Sources */,
