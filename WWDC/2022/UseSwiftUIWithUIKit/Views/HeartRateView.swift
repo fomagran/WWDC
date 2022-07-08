@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct HeartRateView: View {
+    @ObservedObject var data: HeartData
+    
     var body: some View {
-        Text("This is HeartRateView")
+        Text("\(data.bpm) BPM")
     }
 }
