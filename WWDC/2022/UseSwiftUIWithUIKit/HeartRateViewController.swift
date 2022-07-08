@@ -11,7 +11,7 @@ import Charts
 
 @available(iOS 16.0, *)
 class HeartRateViewController: UIViewController {
-
+    
     @IBOutlet weak var table: UITableView!
     
     
@@ -20,7 +20,7 @@ class HeartRateViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-//        self.configure()
+        //        self.configure()
     }
     
     private func configure() {
@@ -40,17 +40,29 @@ extension HeartRateViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.contentConfiguration = UIHostingConfiguration {
-            VStack(alignment: .leading) {
-                HeartRateTitleView()
-                Spacer()
-                HStack(alignment: .bottom) {
-                    HeartRateBPMView()
-                    Spacer()
-                    HeartRateChartView()
+        cell.configurationUpdateHandler = { cell, state in
+            cell.contentConfiguration = UIHostingConfiguration {
+                HStack {
+                    VStack(alignment: .leading) {
+                        HeartRateTitleView()
+                        Spacer()
+                        HStack(alignment: .bottom) {
+                            HeartRateBPMView()
+                            Spacer()
+                            HeartRateChartView()
+                        }
+                    }
+                    if state.isSelected {
+                        VStack {
+                            Spacer()
+                            Image(systemName: "checkmark")
+                            Spacer()
+                        }
+                    }
                 }
             }
         }
+        
         return cell
     }
 }
