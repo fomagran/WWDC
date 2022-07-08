@@ -24,7 +24,7 @@ class HeartRateViewController: UIViewController {
     }
     
     private func configure() {
-        let data:HeartData = HeartData(beatsPerMinute: 10)
+        let data:HeartData = HeartData(chartData:[HeartChartData(time: 0, beatsPerMinute: 0)],bpm: 0)
         let hostingController: UIHostingController<HeartRateView> = UIHostingController(rootView: HeartRateView(data: data))
         hostingController.sizingOptions = .preferredContentSize
         hostingController.modalPresentationStyle = .popover
@@ -35,7 +35,7 @@ class HeartRateViewController: UIViewController {
 @available(iOS 16.0, *)
 extension HeartRateViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return heartDataSamples.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,11 +45,14 @@ extension HeartRateViewController: UITableViewDataSource {
                 HStack {
                     VStack(alignment: .leading) {
                         HeartRateTitleView()
+                            .onTapGesture {
+                                heartDataSamples[indexPath.row].bpm += 1
+                            }
                         Spacer()
                         HStack(alignment: .bottom) {
-                            HeartRateBPMView()
+                            HeartRateBPMView(heartData:heartDataSamples[indexPath.row])
                             Spacer()
-                            HeartRateChartView()
+                            HeartRateChartView(heartData:heartDataSamples[indexPath.row])
                         }
                     }
                     if state.isSelected {

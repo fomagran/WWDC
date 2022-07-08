@@ -13,6 +13,8 @@
 		04B9E9F12877C93100284E34 /* HeartRateTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */; };
 		04B9E9F32877C95600284E34 /* HeartRateBPMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9F22877C95600284E34 /* HeartRateBPMView.swift */; };
 		04B9E9F72877CC7100284E34 /* HeartRateChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9F62877CC7100284E34 /* HeartRateChartView.swift */; };
+		04B9E9F92877D48100284E34 /* HeartDataSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9F82877D48100284E34 /* HeartDataSamples.swift */; };
+		04B9E9FB2877D5E800284E34 /* HeartChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9FA2877D5E800284E34 /* HeartChartData.swift */; };
 		04F41CD428720CDD004B291A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F41CD328720CDD004B291A /* AppDelegate.swift */; };
 		04F41CD628720CDD004B291A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F41CD528720CDD004B291A /* SceneDelegate.swift */; };
 		04F41CD828720CDD004B291A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F41CD728720CDD004B291A /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTitleView.swift; sourceTree = "<group>"; };
 		04B9E9F22877C95600284E34 /* HeartRateBPMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateBPMView.swift; sourceTree = "<group>"; };
 		04B9E9F62877CC7100284E34 /* HeartRateChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateChartView.swift; sourceTree = "<group>"; };
+		04B9E9F82877D48100284E34 /* HeartDataSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartDataSamples.swift; sourceTree = "<group>"; };
+		04B9E9FA2877D5E800284E34 /* HeartChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartChartData.swift; sourceTree = "<group>"; };
 		04F41CD028720CDD004B291A /* WWDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F41CD328720CDD004B291A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F41CD528720CDD004B291A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,14 +64,48 @@
 		040C642C28737E3E00A34AEF /* UseSwiftUIWithUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				040C642D28737E7500A34AEF /* HeartRateViewController.swift */,
+				04B9E9FF2877D8B800284E34 /* Datas */,
+				04B9E9FE2877D8B100284E34 /* Models */,
+				04B9E9FD2877D8A300284E34 /* Controllers */,
+				04B9E9FC2877D89400284E34 /* Views */,
+			);
+			path = UseSwiftUIWithUIKit;
+			sourceTree = "<group>";
+		};
+		04B9E9FC2877D89400284E34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				047472482877AE09002222B3 /* HeartRateView.swift */,
-				04B9E9EC2877C33D00284E34 /* HeartData.swift */,
 				04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */,
 				04B9E9F22877C95600284E34 /* HeartRateBPMView.swift */,
 				04B9E9F62877CC7100284E34 /* HeartRateChartView.swift */,
 			);
-			path = UseSwiftUIWithUIKit;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04B9E9FD2877D8A300284E34 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				040C642D28737E7500A34AEF /* HeartRateViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04B9E9FE2877D8B100284E34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04B9E9EC2877C33D00284E34 /* HeartData.swift */,
+				04B9E9FA2877D5E800284E34 /* HeartChartData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04B9E9FF2877D8B800284E34 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				04B9E9F82877D48100284E34 /* HeartDataSamples.swift */,
+			);
+			path = Datas;
 			sourceTree = "<group>";
 		};
 		04F41CC728720CDD004B291A = {
@@ -174,6 +212,8 @@
 			files = (
 				04B9E9F72877CC7100284E34 /* HeartRateChartView.swift in Sources */,
 				04B9E9F12877C93100284E34 /* HeartRateTitleView.swift in Sources */,
+				04B9E9FB2877D5E800284E34 /* HeartChartData.swift in Sources */,
+				04B9E9F92877D48100284E34 /* HeartDataSamples.swift in Sources */,
 				04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */,
 				047472492877AE09002222B3 /* HeartRateView.swift in Sources */,
 				04B9E9F32877C95600284E34 /* HeartRateBPMView.swift in Sources */,

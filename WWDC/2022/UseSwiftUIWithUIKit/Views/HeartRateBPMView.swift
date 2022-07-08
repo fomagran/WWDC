@@ -9,9 +9,11 @@ import SwiftUI
 
 @available(iOS 16.0, *)
 struct HeartRateBPMView: View {
+    @ObservedObject var heartData: HeartData
+    
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
-            Text("90")
+            Text("\(heartData.bpm)")
                 .font(.system(.title,weight: .semibold))
             
             Text("BPM")

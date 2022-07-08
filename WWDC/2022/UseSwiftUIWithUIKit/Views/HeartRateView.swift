@@ -11,6 +11,6 @@ struct HeartRateView: View {
     @ObservedObject var data: HeartData
     
     var body: some View {
-        Text("\(data.beatsPerMinute) BPM")
+        Text("\(data.bpm) BPM")
     }
 }
