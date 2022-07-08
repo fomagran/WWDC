@@ -7,15 +7,16 @@
 
 import UIKit
 import SwiftUI
+import Charts
 
 @available(iOS 16.0, *)
 class HeartRateViewController: UIViewController {
 
     @IBOutlet weak var table: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -43,7 +44,11 @@ extension HeartRateViewController: UITableViewDataSource {
             VStack(alignment: .leading) {
                 HeartRateTitleView()
                 Spacer()
-                HeartRateBPMView()
+                HStack(alignment: .bottom) {
+                    HeartRateBPMView()
+                    Spacer()
+                    HeartRateChartView()
+                }
             }
         }
         return cell
