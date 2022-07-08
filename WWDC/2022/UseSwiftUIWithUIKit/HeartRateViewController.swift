@@ -38,11 +38,13 @@ extension HeartRateViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = table.dequeueReusableCell(withIdentifier: "HeartRateTableViewCell") as! HeartRateTableViewCell
+        let cell = UITableViewCell()
         cell.contentConfiguration = UIHostingConfiguration {
-            Label("Heart Rate", systemImage: "heart.fill")
-                .foregroundColor(.pink)
-                .font(.system(.subheadline, weight: .bold))
+            VStack(alignment: .leading) {
+                HeartRateTitleView()
+                Spacer()
+                HeartRateBPMView()
+            }
         }
         return cell
     }
