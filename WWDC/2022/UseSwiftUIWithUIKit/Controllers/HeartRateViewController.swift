@@ -7,7 +7,7 @@
 
 import UIKit
 import SwiftUI
-import Charts
+
 
 @available(iOS 16.0, *)
 class HeartRateViewController: UIViewController {
@@ -18,12 +18,17 @@ class HeartRateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
     
     private func openDetailView(heartData: HeartData) {
         let hostingController: UIHostingController<HeartRateDetailView> = UIHostingController(rootView: HeartRateDetailView(data: heartData))
         hostingController.sizingOptions = .preferredContentSize
         hostingController.modalPresentationStyle = .popover
         self.present(hostingController, animated: true)
+    }
+    
+    private func deleteHandler() {
+        print("delete")
     }
 }
 
@@ -49,6 +54,11 @@ extension HeartRateViewController: UITableViewDataSource {
                             Spacer()
                             HeartRateChartView(heartData:heartDataSamples[indexPath.row])
                         }
+                    }
+                }
+                .swipeActions(edge: .trailing) {
+                    Button(role: .destructive, action: self.deleteHandler) {
+                        Label("Delete", systemImage: "trash")
                     }
                 }
                 .onTapGesture {

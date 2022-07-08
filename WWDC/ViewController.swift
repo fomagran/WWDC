@@ -6,14 +6,12 @@
 //
 
 import UIKit
+import SwiftUI
 
+@available(iOS 16.0, *)
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    override func viewDidAppear(_ animated: Bool) {
     }
-
-
 }
 
