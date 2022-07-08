@@ -19,13 +19,8 @@ class HeartRateViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        //        self.configure()
-    }
-    
-    private func configure() {
-        let data:HeartData = HeartData(chartData:[HeartChartData(time: 0, beatsPerMinute: 0)],bpm: 0)
-        let hostingController: UIHostingController<HeartRateView> = UIHostingController(rootView: HeartRateView(data: data))
+    private func openDetailView(heartData: HeartData) {
+        let hostingController: UIHostingController<HeartRateDetailView> = UIHostingController(rootView: HeartRateDetailView(data: heartData))
         hostingController.sizingOptions = .preferredContentSize
         hostingController.modalPresentationStyle = .popover
         self.present(hostingController, animated: true)
@@ -55,13 +50,9 @@ extension HeartRateViewController: UITableViewDataSource {
                             HeartRateChartView(heartData:heartDataSamples[indexPath.row])
                         }
                     }
-                    if state.isSelected {
-                        VStack {
-                            Spacer()
-                            Image(systemName: "checkmark")
-                            Spacer()
-                        }
-                    }
+                }
+                .onTapGesture {
+                    self.openDetailView(heartData: heartDataSamples[indexPath.row])
                 }
             }
         }
