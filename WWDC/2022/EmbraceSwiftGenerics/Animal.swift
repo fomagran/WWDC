@@ -7,6 +7,6 @@
 
 import Foundation
 
-class Animal {
-    func eat(_ food:Any) { fatalError("Subclass must implement 'eat'")}
+class Animal<Food> {
+    func eat(_ food:Food) { fatalError("Subclass must implement 'eat'")}
 }

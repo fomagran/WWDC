@@ -7,8 +7,6 @@
 
 import Foundation
 
-class Cow: Animal {
-    override func eat(_ food:Any) {
-        guard let food = food as? Hay else { fatalError("Cow cannot eat \(food)")}
-    }
+class Cow: Animal<Hay> {
+    override func eat(_ food:Hay) {}
 }
