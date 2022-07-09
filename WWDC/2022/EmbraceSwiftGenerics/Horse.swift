@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Horse {
-    func eat(_ food: Carrot) {}
+class Horse: Animal {
+   override func eat(_ food: Carrot) {}
 }
