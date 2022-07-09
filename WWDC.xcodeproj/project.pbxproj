@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		040C642E28737E7500A34AEF /* HeartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C642D28737E7500A34AEF /* HeartRateViewController.swift */; };
+		0443B20D287A324700957E0A /* Cow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B20C287A324700957E0A /* Cow.swift */; };
+		0443B20F287A329500957E0A /* Hay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B20E287A329500957E0A /* Hay.swift */; };
+		0443B211287A32AD00957E0A /* Alfalfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B210287A32AD00957E0A /* Alfalfa.swift */; };
+		0443B213287A32C500957E0A /* Farm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B212287A32C500957E0A /* Farm.swift */; };
 		047472492877AE09002222B3 /* HeartRateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047472482877AE09002222B3 /* HeartRateDetailView.swift */; };
 		04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9EC2877C33D00284E34 /* HeartData.swift */; };
 		04B9E9F12877C93100284E34 /* HeartRateTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */; };
@@ -25,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		040C642D28737E7500A34AEF /* HeartRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewController.swift; sourceTree = "<group>"; };
+		0443B20C287A324700957E0A /* Cow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cow.swift; sourceTree = "<group>"; };
+		0443B20E287A329500957E0A /* Hay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hay.swift; sourceTree = "<group>"; };
+		0443B210287A32AD00957E0A /* Alfalfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alfalfa.swift; sourceTree = "<group>"; };
+		0443B212287A32C500957E0A /* Farm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farm.swift; sourceTree = "<group>"; };
 		047472482877AE09002222B3 /* HeartRateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateDetailView.swift; sourceTree = "<group>"; };
 		04B9E9EC2877C33D00284E34 /* HeartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartData.swift; sourceTree = "<group>"; };
 		04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTitleView.swift; sourceTree = "<group>"; };
@@ -56,6 +64,7 @@
 		040C642B28737DFE00A34AEF /* 2022 */ = {
 			isa = PBXGroup;
 			children = (
+				0443B20B287A278F00957E0A /* EmbraceSwiftGenerics */,
 				040C642C28737E3E00A34AEF /* UseSwiftUIWithUIKit */,
 			);
 			path = 2022;
@@ -70,6 +79,17 @@
 				04B9E9FC2877D89400284E34 /* Views */,
 			);
 			path = UseSwiftUIWithUIKit;
+			sourceTree = "<group>";
+		};
+		0443B20B287A278F00957E0A /* EmbraceSwiftGenerics */ = {
+			isa = PBXGroup;
+			children = (
+				0443B20C287A324700957E0A /* Cow.swift */,
+				0443B20E287A329500957E0A /* Hay.swift */,
+				0443B210287A32AD00957E0A /* Alfalfa.swift */,
+				0443B212287A32C500957E0A /* Farm.swift */,
+			);
+			path = EmbraceSwiftGenerics;
 			sourceTree = "<group>";
 		};
 		04B9E9FC2877D89400284E34 /* Views */ = {
@@ -211,15 +231,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B9E9F72877CC7100284E34 /* HeartRateChartView.swift in Sources */,
+				0443B20D287A324700957E0A /* Cow.swift in Sources */,
 				04B9E9F12877C93100284E34 /* HeartRateTitleView.swift in Sources */,
 				04B9E9FB2877D5E800284E34 /* HeartChartData.swift in Sources */,
 				04B9E9F92877D48100284E34 /* HeartDataSamples.swift in Sources */,
 				04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */,
+				0443B213287A32C500957E0A /* Farm.swift in Sources */,
 				047472492877AE09002222B3 /* HeartRateDetailView.swift in Sources */,
+				0443B211287A32AD00957E0A /* Alfalfa.swift in Sources */,
 				04B9E9F32877C95600284E34 /* HeartRateBPMView.swift in Sources */,
 				04F41CD828720CDD004B291A /* ViewController.swift in Sources */,
 				04F41CD428720CDD004B291A /* AppDelegate.swift in Sources */,
 				040C642E28737E7500A34AEF /* HeartRateViewController.swift in Sources */,
+				0443B20F287A329500957E0A /* Hay.swift in Sources */,
 				04F41CD628720CDD004B291A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
