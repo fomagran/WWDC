@@ -8,7 +8,5 @@
 import Foundation
 
 struct Hay {
-    static func grow() -> Alfalfa {
-        
-    }
+    static func grow() -> Alfalfa {}
 }

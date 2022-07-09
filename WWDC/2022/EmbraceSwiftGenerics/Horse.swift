@@ -1,5 +1,5 @@
 //
-//  Alfalfa.swift
+//  Horse.swift
 //  WWDC
 //
 //  Created by Fomagran on 2022/07/09.
@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Alfalfa {
-    func havest() -> Hay {}
+struct Horse {
+    func eat(_ food: Carrot) {}
 }

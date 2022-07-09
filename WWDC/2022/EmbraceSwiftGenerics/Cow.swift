@@ -8,7 +8,5 @@
 import Foundation
 
 struct Cow {
-    func eat(_ food:Hay) {
-        
-    }
+    func eat(_ food:Hay) {}
 }

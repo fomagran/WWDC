@@ -12,6 +12,10 @@
 		0443B20F287A329500957E0A /* Hay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B20E287A329500957E0A /* Hay.swift */; };
 		0443B211287A32AD00957E0A /* Alfalfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B210287A32AD00957E0A /* Alfalfa.swift */; };
 		0443B213287A32C500957E0A /* Farm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B212287A32C500957E0A /* Farm.swift */; };
+		0443B215287A36C800957E0A /* Horse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B214287A36C800957E0A /* Horse.swift */; };
+		0443B217287A36D100957E0A /* Chicken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B216287A36D100957E0A /* Chicken.swift */; };
+		0443B219287A36F500957E0A /* Grain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B218287A36F500957E0A /* Grain.swift */; };
+		0443B21B287A36FC00957E0A /* Carrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B21A287A36FC00957E0A /* Carrot.swift */; };
 		047472492877AE09002222B3 /* HeartRateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047472482877AE09002222B3 /* HeartRateDetailView.swift */; };
 		04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9EC2877C33D00284E34 /* HeartData.swift */; };
 		04B9E9F12877C93100284E34 /* HeartRateTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */; };
@@ -33,6 +37,10 @@
 		0443B20E287A329500957E0A /* Hay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hay.swift; sourceTree = "<group>"; };
 		0443B210287A32AD00957E0A /* Alfalfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alfalfa.swift; sourceTree = "<group>"; };
 		0443B212287A32C500957E0A /* Farm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farm.swift; sourceTree = "<group>"; };
+		0443B214287A36C800957E0A /* Horse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horse.swift; sourceTree = "<group>"; };
+		0443B216287A36D100957E0A /* Chicken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chicken.swift; sourceTree = "<group>"; };
+		0443B218287A36F500957E0A /* Grain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grain.swift; sourceTree = "<group>"; };
+		0443B21A287A36FC00957E0A /* Carrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrot.swift; sourceTree = "<group>"; };
 		047472482877AE09002222B3 /* HeartRateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateDetailView.swift; sourceTree = "<group>"; };
 		04B9E9EC2877C33D00284E34 /* HeartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartData.swift; sourceTree = "<group>"; };
 		04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTitleView.swift; sourceTree = "<group>"; };
@@ -88,6 +96,10 @@
 				0443B20E287A329500957E0A /* Hay.swift */,
 				0443B210287A32AD00957E0A /* Alfalfa.swift */,
 				0443B212287A32C500957E0A /* Farm.swift */,
+				0443B214287A36C800957E0A /* Horse.swift */,
+				0443B216287A36D100957E0A /* Chicken.swift */,
+				0443B218287A36F500957E0A /* Grain.swift */,
+				0443B21A287A36FC00957E0A /* Carrot.swift */,
 			);
 			path = EmbraceSwiftGenerics;
 			sourceTree = "<group>";
@@ -237,13 +249,17 @@
 				04B9E9F92877D48100284E34 /* HeartDataSamples.swift in Sources */,
 				04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */,
 				0443B213287A32C500957E0A /* Farm.swift in Sources */,
+				0443B215287A36C800957E0A /* Horse.swift in Sources */,
 				047472492877AE09002222B3 /* HeartRateDetailView.swift in Sources */,
 				0443B211287A32AD00957E0A /* Alfalfa.swift in Sources */,
 				04B9E9F32877C95600284E34 /* HeartRateBPMView.swift in Sources */,
 				04F41CD828720CDD004B291A /* ViewController.swift in Sources */,
 				04F41CD428720CDD004B291A /* AppDelegate.swift in Sources */,
+				0443B219287A36F500957E0A /* Grain.swift in Sources */,
+				0443B21B287A36FC00957E0A /* Carrot.swift in Sources */,
 				040C642E28737E7500A34AEF /* HeartRateViewController.swift in Sources */,
 				0443B20F287A329500957E0A /* Hay.swift in Sources */,
+				0443B217287A36D100957E0A /* Chicken.swift in Sources */,
 				04F41CD628720CDD004B291A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
