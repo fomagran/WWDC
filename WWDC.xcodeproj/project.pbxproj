@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		040C642E28737E7500A34AEF /* HeartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C642D28737E7500A34AEF /* HeartRateViewController.swift */; };
+		043886FD287B6EE2005C2719 /* Egg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043886FC287B6EE2005C2719 /* Egg.swift */; };
+		043886FF287B6EEB005C2719 /* Milk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043886FE287B6EEB005C2719 /* Milk.swift */; };
+		04388701287B6F49005C2719 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04388700287B6F49005C2719 /* Product.swift */; };
+		04388703287B7227005C2719 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04388702287B7227005C2719 /* Vehicle.swift */; };
 		0443B20D287A324700957E0A /* Cow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B20C287A324700957E0A /* Cow.swift */; };
 		0443B20F287A329500957E0A /* Hay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B20E287A329500957E0A /* Hay.swift */; };
 		0443B211287A32AD00957E0A /* Alfalfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B210287A32AD00957E0A /* Alfalfa.swift */; };
@@ -38,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		040C642D28737E7500A34AEF /* HeartRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewController.swift; sourceTree = "<group>"; };
+		043886FC287B6EE2005C2719 /* Egg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Egg.swift; sourceTree = "<group>"; };
+		043886FE287B6EEB005C2719 /* Milk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milk.swift; sourceTree = "<group>"; };
+		04388700287B6F49005C2719 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		04388702287B7227005C2719 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		0443B20C287A324700957E0A /* Cow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cow.swift; sourceTree = "<group>"; };
 		0443B20E287A329500957E0A /* Hay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hay.swift; sourceTree = "<group>"; };
 		0443B210287A32AD00957E0A /* Alfalfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alfalfa.swift; sourceTree = "<group>"; };
@@ -82,6 +90,7 @@
 		040C642B28737DFE00A34AEF /* 2022 */ = {
 			isa = PBXGroup;
 			children = (
+				043886FA287B5E73005C2719 /* DesignProtocolInterfacesInSwift */,
 				0443B20B287A278F00957E0A /* EmbraceSwiftGenerics */,
 				040C642C28737E3E00A34AEF /* UseSwiftUIWithUIKit */,
 			);
@@ -99,26 +108,44 @@
 			path = UseSwiftUIWithUIKit;
 			sourceTree = "<group>";
 		};
+		043886FA287B5E73005C2719 /* DesignProtocolInterfacesInSwift */ = {
+			isa = PBXGroup;
+			children = (
+				043886FB287B6ED9005C2719 /* Products */,
+				0443B22B287A5FCA00957E0A /* Protocols */,
+			);
+			path = DesignProtocolInterfacesInSwift;
+			sourceTree = "<group>";
+		};
+		043886FB287B6ED9005C2719 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043886FC287B6EE2005C2719 /* Egg.swift */,
+				043886FE287B6EEB005C2719 /* Milk.swift */,
+				04388702287B7227005C2719 /* Vehicle.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 		0443B20B287A278F00957E0A /* EmbraceSwiftGenerics */ = {
 			isa = PBXGroup;
 			children = (
-				0443B22B287A5FCA00957E0A /* Protocols */,
 				0443B226287A5BFB00957E0A /* Crops */,
 				0443B225287A5BC700957E0A /* Animals */,
-				0443B224287A5BAD00957E0A /* Produces */,
+				0443B224287A5BAD00957E0A /* Feeds */,
 				0443B212287A32C500957E0A /* Farm.swift */,
 			);
 			path = EmbraceSwiftGenerics;
 			sourceTree = "<group>";
 		};
-		0443B224287A5BAD00957E0A /* Produces */ = {
+		0443B224287A5BAD00957E0A /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
 				0443B20E287A329500957E0A /* Hay.swift */,
 				0443B218287A36F500957E0A /* Grain.swift */,
 				0443B21A287A36FC00957E0A /* Carrot.swift */,
 			);
-			path = Produces;
+			path = Feeds;
 			sourceTree = "<group>";
 		};
 		0443B225287A5BC700957E0A /* Animals */ = {
@@ -147,6 +174,7 @@
 				0443B21C287A3C2000957E0A /* Animal.swift */,
 				0443B21E287A590C00957E0A /* AnimalFeed.swift */,
 				0443B220287A599D00957E0A /* Crop.swift */,
+				04388700287B6F49005C2719 /* Product.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -293,6 +321,7 @@
 				0443B20D287A324700957E0A /* Cow.swift in Sources */,
 				04B9E9F12877C93100284E34 /* HeartRateTitleView.swift in Sources */,
 				0443B221287A599D00957E0A /* Crop.swift in Sources */,
+				04388703287B7227005C2719 /* Vehicle.swift in Sources */,
 				04B9E9FB2877D5E800284E34 /* HeartChartData.swift in Sources */,
 				04B9E9F92877D48100284E34 /* HeartDataSamples.swift in Sources */,
 				04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */,
@@ -309,6 +338,9 @@
 				04F41CD428720CDD004B291A /* AppDelegate.swift in Sources */,
 				0443B219287A36F500957E0A /* Grain.swift in Sources */,
 				0443B21B287A36FC00957E0A /* Carrot.swift in Sources */,
+				04388701287B6F49005C2719 /* Product.swift in Sources */,
+				043886FF287B6EEB005C2719 /* Milk.swift in Sources */,
+				043886FD287B6EE2005C2719 /* Egg.swift in Sources */,
 				040C642E28737E7500A34AEF /* HeartRateViewController.swift in Sources */,
 				0443B20F287A329500957E0A /* Hay.swift in Sources */,
 				0443B217287A36D100957E0A /* Chicken.swift in Sources */,

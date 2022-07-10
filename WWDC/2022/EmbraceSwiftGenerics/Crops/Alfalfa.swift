@@ -7,10 +7,8 @@
 
 import Foundation
 
-struct Alfalfa: Crop {
-    typealias FeedType = Hay
-    
-    func harvest() -> FeedType {
-        return FeedType()
+struct Alfalfa: Crop {    
+    func harvest() -> Hay {
+        return Hay()
     }
 }

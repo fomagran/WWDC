@@ -8,9 +8,7 @@
 import Foundation
 
 struct Wheat: Crop {
-    typealias FeedType = Grain
-    
-    func harvest() -> FeedType {
-        return FeedType()
+    func harvest() -> Grain {
+        return Grain()
     }
 }

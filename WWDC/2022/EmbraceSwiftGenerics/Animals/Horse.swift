@@ -9,4 +9,7 @@ import Foundation
 
 struct Horse: Animal {
     func eat(_ food: Carrot) {}
+    func produce() -> Vehicle {
+        return Vehicle()
+    }
 }

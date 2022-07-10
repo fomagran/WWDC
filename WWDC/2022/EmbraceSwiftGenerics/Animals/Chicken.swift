@@ -9,4 +9,7 @@ import Foundation
 
 struct Chicken: Animal {
     func eat(_ food: Grain) {}
+    func produce() -> Egg {
+        return Egg()
+    }
 }
