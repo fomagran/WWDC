@@ -7,6 +7,6 @@
 
 import Foundation
 
-class Cow: Animal<Hay> {
+class Cow: Animal<Hay, Barn, Milk> {
     override func eat(_ food:Hay) {}
 }

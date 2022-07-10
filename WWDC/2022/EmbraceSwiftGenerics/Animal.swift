@@ -7,6 +7,7 @@
 
 import Foundation
 
-class Animal<Food> {
-    func eat(_ food:Food) { fatalError("Subclass must implement 'eat'")}
+protocol Animal {
+    associatedtype Feed
+    func eat(_ food: Feed)
 }
