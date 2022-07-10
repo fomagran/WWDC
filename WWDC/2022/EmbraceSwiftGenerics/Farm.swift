@@ -13,5 +13,11 @@ struct Farm {
         let produce = crop.harvest()
         animal.eat(produce)
     }
+    
+    func feedAll(_ animals: [any Animal]) {
+        for animal in animals {
+            feed(animal)
+        }
+    }
 }
 
