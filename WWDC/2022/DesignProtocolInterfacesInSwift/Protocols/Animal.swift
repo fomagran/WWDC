@@ -8,6 +8,7 @@
 import Foundation
 
 protocol Animal {
+    var isHungry:Bool { get }
     associatedtype FeedType: AnimalFeed
     associatedtype ProductType: Product
     func eat(_ food: FeedType)

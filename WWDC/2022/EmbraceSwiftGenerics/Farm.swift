@@ -8,7 +8,23 @@
 import Foundation
 
 struct Farm {
+    var isLazy = true
+    
+    var hungryAnimals: any Collection<any Animal> {
+        if isLazy {
+           return animals.lazy.filter(\.isHungry)
+        }else {
+           return animals.filter(\.isHungry)
+        }
+    }
+    
     var animals:[any Animal]
+    
+    func feedToHungryAnimals() {
+        for animal in hungryAnimals {
+            print(animal)
+        }
+    }
     
     func feed(_ animal: some Animal) {
         let crop = type(of: animal).FeedType.grow()

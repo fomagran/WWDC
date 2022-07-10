@@ -8,7 +8,10 @@
 import Foundation
 
 struct Horse: Animal {
+    var isHungry: Bool = true
+    
     func eat(_ food: Carrot) {}
+    
     func produce() -> Vehicle {
         return Vehicle()
     }

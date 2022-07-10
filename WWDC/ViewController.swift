@@ -12,10 +12,13 @@ import SwiftUI
 class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
-        let farm = Farm()
-        let animals:[any Animal] = [Horse(),Chicken(),Cow()]
-        farm.feed(Cow())
-        farm.feedAll(animals)
+        let animals:[any Animal] = [Horse(),Chicken(),Cow(),Cow(),Cow(),Cow(),Cow(),Cow(),Cow(),Horse(),Chicken(),Horse(),Chicken(),Horse(),Chicken(),Horse(),Chicken(),Horse(),Chicken()]
+        let farm = Farm(animals: animals)
+        
+        for _ in 0...10 {
+            print("-----------------")
+            farm.feedToHungryAnimals()
+        }
     }
 }
 
