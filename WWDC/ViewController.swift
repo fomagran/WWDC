@@ -12,6 +12,10 @@ import SwiftUI
 class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
+        let farm = Farm()
+        let animals:[any Animal] = [Horse(),Chicken(),Cow()]
+        farm.feed(Cow())
+        farm.feedAll(animals)
     }
 }
 
