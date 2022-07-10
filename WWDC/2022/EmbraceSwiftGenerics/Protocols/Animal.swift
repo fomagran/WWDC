@@ -8,6 +8,6 @@
 import Foundation
 
 protocol Animal {
-    associatedtype Feed
-    func eat(_ food: Feed)
+    associatedtype FeedType: AnimalFeed
+    func eat(_ food: FeedType)
 }

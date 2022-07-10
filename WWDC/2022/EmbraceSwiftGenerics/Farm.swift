@@ -8,21 +8,10 @@
 import Foundation
 
 struct Farm {
-    func feed(_ animal: Cow) {
-        let alfalfa = Hay.grow()
-        let hay = alfalfa.havest()
-        animal.eat(hay)
-    }
-    
-    func feed(_ animal: Horse) {
-        let root = Carrot.grow()
-        let carrot = root.havest()
-        animal.eat(carrot)
-    }
-    
-    func feed(_ animal: Chicken) {
-        let wheat = Grain.grow()
-        let grain = wheat.havest()
-        animal.eat(grain)
+    func feed(_ animal: some Animal) {
+        let crop = type(of: animal).FeedType.grow()
+        let produce = crop.harvest()
+        animal.eat(produce)
     }
 }
+

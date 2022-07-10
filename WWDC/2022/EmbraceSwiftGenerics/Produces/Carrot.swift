@@ -7,6 +7,8 @@
 
 import Foundation
 
-struct Carrot {
-    
+struct Carrot: AnimalFeed {
+    static func grow() -> Root {
+        return Root()
+    }
 }

@@ -7,6 +7,8 @@
 
 import Foundation
 
-struct Hay {
-    static func grow() -> Alfalfa {}
+struct Hay: AnimalFeed {
+    static func grow() -> Alfalfa {
+        return Alfalfa()
+    }
 }

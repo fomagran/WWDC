@@ -17,6 +17,10 @@
 		0443B219287A36F500957E0A /* Grain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B218287A36F500957E0A /* Grain.swift */; };
 		0443B21B287A36FC00957E0A /* Carrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B21A287A36FC00957E0A /* Carrot.swift */; };
 		0443B21D287A3C2000957E0A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B21C287A3C2000957E0A /* Animal.swift */; };
+		0443B21F287A590C00957E0A /* AnimalFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B21E287A590C00957E0A /* AnimalFeed.swift */; };
+		0443B221287A599D00957E0A /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B220287A599D00957E0A /* Crop.swift */; };
+		0443B228287A5DFB00957E0A /* Wheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B227287A5DFB00957E0A /* Wheat.swift */; };
+		0443B22A287A5E0200957E0A /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443B229287A5E0200957E0A /* Root.swift */; };
 		047472492877AE09002222B3 /* HeartRateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047472482877AE09002222B3 /* HeartRateDetailView.swift */; };
 		04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9EC2877C33D00284E34 /* HeartData.swift */; };
 		04B9E9F12877C93100284E34 /* HeartRateTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */; };
@@ -43,6 +47,10 @@
 		0443B218287A36F500957E0A /* Grain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grain.swift; sourceTree = "<group>"; };
 		0443B21A287A36FC00957E0A /* Carrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrot.swift; sourceTree = "<group>"; };
 		0443B21C287A3C2000957E0A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		0443B21E287A590C00957E0A /* AnimalFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFeed.swift; sourceTree = "<group>"; };
+		0443B220287A599D00957E0A /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
+		0443B227287A5DFB00957E0A /* Wheat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheat.swift; sourceTree = "<group>"; };
+		0443B229287A5E0200957E0A /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		047472482877AE09002222B3 /* HeartRateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateDetailView.swift; sourceTree = "<group>"; };
 		04B9E9EC2877C33D00284E34 /* HeartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartData.swift; sourceTree = "<group>"; };
 		04B9E9F02877C93100284E34 /* HeartRateTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTitleView.swift; sourceTree = "<group>"; };
@@ -94,17 +102,53 @@
 		0443B20B287A278F00957E0A /* EmbraceSwiftGenerics */ = {
 			isa = PBXGroup;
 			children = (
-				0443B20C287A324700957E0A /* Cow.swift */,
-				0443B20E287A329500957E0A /* Hay.swift */,
-				0443B210287A32AD00957E0A /* Alfalfa.swift */,
+				0443B22B287A5FCA00957E0A /* Protocols */,
+				0443B226287A5BFB00957E0A /* Crops */,
+				0443B225287A5BC700957E0A /* Animals */,
+				0443B224287A5BAD00957E0A /* Produces */,
 				0443B212287A32C500957E0A /* Farm.swift */,
-				0443B214287A36C800957E0A /* Horse.swift */,
-				0443B216287A36D100957E0A /* Chicken.swift */,
-				0443B218287A36F500957E0A /* Grain.swift */,
-				0443B21A287A36FC00957E0A /* Carrot.swift */,
-				0443B21C287A3C2000957E0A /* Animal.swift */,
 			);
 			path = EmbraceSwiftGenerics;
+			sourceTree = "<group>";
+		};
+		0443B224287A5BAD00957E0A /* Produces */ = {
+			isa = PBXGroup;
+			children = (
+				0443B20E287A329500957E0A /* Hay.swift */,
+				0443B218287A36F500957E0A /* Grain.swift */,
+				0443B21A287A36FC00957E0A /* Carrot.swift */,
+			);
+			path = Produces;
+			sourceTree = "<group>";
+		};
+		0443B225287A5BC700957E0A /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				0443B20C287A324700957E0A /* Cow.swift */,
+				0443B214287A36C800957E0A /* Horse.swift */,
+				0443B216287A36D100957E0A /* Chicken.swift */,
+			);
+			path = Animals;
+			sourceTree = "<group>";
+		};
+		0443B226287A5BFB00957E0A /* Crops */ = {
+			isa = PBXGroup;
+			children = (
+				0443B210287A32AD00957E0A /* Alfalfa.swift */,
+				0443B227287A5DFB00957E0A /* Wheat.swift */,
+				0443B229287A5E0200957E0A /* Root.swift */,
+			);
+			path = Crops;
+			sourceTree = "<group>";
+		};
+		0443B22B287A5FCA00957E0A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0443B21C287A3C2000957E0A /* Animal.swift */,
+				0443B21E287A590C00957E0A /* AnimalFeed.swift */,
+				0443B220287A599D00957E0A /* Crop.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		04B9E9FC2877D89400284E34 /* Views */ = {
@@ -248,14 +292,18 @@
 				04B9E9F72877CC7100284E34 /* HeartRateChartView.swift in Sources */,
 				0443B20D287A324700957E0A /* Cow.swift in Sources */,
 				04B9E9F12877C93100284E34 /* HeartRateTitleView.swift in Sources */,
+				0443B221287A599D00957E0A /* Crop.swift in Sources */,
 				04B9E9FB2877D5E800284E34 /* HeartChartData.swift in Sources */,
 				04B9E9F92877D48100284E34 /* HeartDataSamples.swift in Sources */,
 				04B9E9ED2877C33D00284E34 /* HeartData.swift in Sources */,
+				0443B22A287A5E0200957E0A /* Root.swift in Sources */,
 				0443B213287A32C500957E0A /* Farm.swift in Sources */,
+				0443B21F287A590C00957E0A /* AnimalFeed.swift in Sources */,
 				0443B215287A36C800957E0A /* Horse.swift in Sources */,
 				047472492877AE09002222B3 /* HeartRateDetailView.swift in Sources */,
 				0443B21D287A3C2000957E0A /* Animal.swift in Sources */,
 				0443B211287A32AD00957E0A /* Alfalfa.swift in Sources */,
+				0443B228287A5DFB00957E0A /* Wheat.swift in Sources */,
 				04B9E9F32877C95600284E34 /* HeartRateBPMView.swift in Sources */,
 				04F41CD828720CDD004B291A /* ViewController.swift in Sources */,
 				04F41CD428720CDD004B291A /* AppDelegate.swift in Sources */,
