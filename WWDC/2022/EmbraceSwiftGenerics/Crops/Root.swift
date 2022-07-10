@@ -8,9 +8,7 @@
 import Foundation
 
 struct Root: Crop {
-    typealias FeedType = Carrot
-    
-    func harvest() -> FeedType {
-        return FeedType()
+    func harvest() -> Carrot {
+        return Carrot()
     }
 }
